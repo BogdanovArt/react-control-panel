@@ -1,0 +1,16 @@
+@import 'assets/scss/variables';
+
+.App {
+  &Layout {
+    padding-top: 36px;
+    display: flex;
+    width: 100%;
+  }
+  &Menu {
+    min-width: 320px;
+    max-width: 320px;
+  }
+  &Content {
+    color: $comet;
+  }
+}

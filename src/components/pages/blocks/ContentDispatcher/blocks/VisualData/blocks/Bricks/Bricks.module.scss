@@ -1,0 +1,72 @@
+@import "assets/scss/_variables.scss";
+
+.BricksBlock {
+  &Item {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 25px rgba(94, 94, 130, 0.25);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 36px;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 20px;
+    > * {
+      display: flex;
+      align-items: flex-end;
+    }
+    &Title {
+      grid-column: 1 / 3;
+      display: flex;
+      align-items: flex-start;
+      height: 100%;
+      color: $dark;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+    }
+    &Link {
+      justify-content: flex-end;
+      a {
+        display: flex;
+        font-size: 24px;
+        text-decoration: none !important;
+        color: $comet !important;
+        cursor: pointer;
+      }
+    }
+  }
+  &Heading {
+    display: flex;
+    align-items: center;
+  }
+  &Controls {
+    color: $active-color;
+    i {
+      font-size: 18px;
+      margin: 5px;
+      cursor: pointer;
+      &:hover {
+        color: $warning-color;
+      }
+    }
+  }
+  &Title {
+    flex-grow: 1;
+    margin: 32px 0;
+    color: $dark;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+  }
+  &Content {
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - 60px) / 3));
+    grid-gap: 30px;
+    align-items: stretch;
+  }
+}

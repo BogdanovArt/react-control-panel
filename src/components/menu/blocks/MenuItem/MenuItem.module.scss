@@ -1,0 +1,44 @@
+@import "assets/scss/variables";
+.MenuItem {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  grid-template-rows: 48px;
+  column-gap: 13px;
+  border-radius: 8px;
+  padding: 0 15px;
+  transition: $trns;
+  font-size: 16px;
+  font-weight: 400;
+  color: $comet;
+  user-select: none;
+  &Clickable {
+    cursor: pointer;
+    &:hover {
+      color: $text-color;
+    }
+  }
+  &Title {
+    display: flex;
+    align-items: center;
+  }
+  &Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  &ActiveItem {
+    color: $text-color;
+    background-color: $bg-color;
+  }
+  &ActiveGroup {
+    color: $text-color;
+  }
+  &Expandable {
+    height: 0;
+    overflow: hidden;
+  }
+  &Expanded {
+    height: 48px;
+  }
+}

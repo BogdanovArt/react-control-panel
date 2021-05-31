@@ -1,0 +1,10 @@
+@import "assets/scss/variables";
+.MenuIcon {
+  display: flex;
+  width: 26px;
+  max-width: 26px;
+  filter: hue-rotate(220deg) opacity(0.65) saturate(0.5);
+  &Active {
+    filter: none;
+  }
+}

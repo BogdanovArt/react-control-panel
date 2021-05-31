@@ -1,0 +1,31 @@
+@import "assets/scss/_variables.scss";
+
+.AccordionBlock {
+  &Item {
+      border: 1px solid $active-color;
+  }
+  &Heading {
+    display: flex;
+    align-items: center;
+  }
+  &Controls {
+    color: $active-color;
+    i {
+      font-size: 18px;
+      margin: 5px;
+      cursor: pointer;
+      &:hover {
+        color: $warning-color;
+      }
+    }
+  }
+  &Title {
+    flex-grow: 1;
+    margin: 32px 0;
+    color: $dark;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+  }
+}

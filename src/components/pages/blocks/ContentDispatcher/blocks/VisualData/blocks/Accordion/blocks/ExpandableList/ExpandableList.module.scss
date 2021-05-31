@@ -1,0 +1,62 @@
+@import "assets/scss/_variables.scss";
+
+.Collapsed {
+  height: 48px;
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.ExpandableList {
+  border: $active-color;
+  overflow: hidden;
+  transition: height $trns;
+  &Icon {
+    transition: $trns;
+    &Flip {
+      transform: rotate(180deg);
+    }
+  }
+  &Heading {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: $bg-color;
+    padding: 0 16px;
+    cursor: pointer;
+    user-select: none;
+    transition: $trns;
+    span {
+      color: $comet;
+      font-size: 24px;
+    }
+  }
+  &Title {
+    color: $dark;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    flex-grow: 1;
+  }
+  &Row {
+    display: grid;
+    height: 48px;
+    align-items: center;
+    padding: 0 12px;
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  &Column {
+    color: $dark;
+    font-size: 16px;
+    line-height: 20px;
+    &:last-child {
+      color: $comet;
+      text-align: right;
+    }
+  }
+}

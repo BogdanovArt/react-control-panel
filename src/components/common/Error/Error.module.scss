@@ -1,0 +1,16 @@
+@import "assets/scss/variables";
+
+.ErrorBlock {
+  color: $warning-color;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 25px rgba(94, 94, 130, 0.25);
+  &Title {
+    margin: 0 0 32px 0;
+    color: $dark;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+  }
+}

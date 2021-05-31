@@ -1,0 +1,16 @@
+@import 'assets/scss/variables';
+
+.MenuLeft {
+  display: flex;
+  flex-direction: column;
+  width: 192px;
+  &Logo {
+    padding: 0 15px;
+    overflow: hidden;
+    margin: 0 0 55px 0px;
+    filter: saturate(1.5);
+    img {
+      width: 104px;
+    }
+  }
+}
